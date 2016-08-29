@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elink"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-08-25 10:56:46 a. m."/>
+        <attribute name="created" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTI0OyAxMDo1NzowMiBhLiBtLjsgMjQxNg=="/>
+        <attribute name="edited" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTI1OyAxMDo1Njo0NiBhLiBtLjsgMjQyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programa para imprimir la serie 2,5,7,10,12,15,17...1800&#13;&#10;&#13;&#10;Elias Edgardo Segundo Antonio &#13;&#10;ICO 21 2016B "/>
+            <declare name="elemento" type="Integer" array="False" size="" variables="elemento"/>
+            <assign variable="elemento" expression="2"/>
+            <output expression="elemento"/>
+            <assign variable="elemento" expression="5"/>
+            <while expression="elemento!=1800">
+                <assign variable="elemento" expression="elemento+2"/>
+                <output expression="elemento"/>
+                <assign variable="elemento" expression="elemento+3"/>
+                <output expression="elemento"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

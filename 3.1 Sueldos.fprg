@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elink"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-08-24 07:52:47 p. m."/>
+        <attribute name="created" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTI0OyAwOToxMjo0MyBhLiBtLjsgMjQyMA=="/>
+        <attribute name="edited" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTI0OyAwNzo1Mjo0NyBwLiBtLjsgMjQ0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programa para calcular la nomina de 10 sueldos&#13;&#10;&#13;&#10;Elias Edgardo Segundo Antonio &#13;&#10;ICO 21 2016B "/>
+            <declare name="NominaTotal" type="Real" array="False" size="" variables="NominaTotal"/>
+            <declare name="sueldo" type="Real" array="False" size="" variables="sueldo"/>
+            <declare name="i" type="Integer" array="False" size="" variables="i"/>
+            <assign variable="NominaTotal" expression="0"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Inserte el sueldo del empleado numero &quot; &amp; i"/>
+                <input variable="sueldo"/>
+                <assign variable="NominaTotal" expression="NominaTotal+sueldo"/>
+            </for>
+            <output expression="&quot;El valor de la nomina es &quot; &amp;NominaTotal &amp;&quot;$&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elink"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-08-24 07:53:16 p. m."/>
+        <attribute name="created" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTI0OyAxMDozNTo0MSBhLiBtLjsgMjQxNQ=="/>
+        <attribute name="edited" value="RWxpbms7IEVMSUFTOyAyMDE2LTA4LTI0OyAwNzo1MzoxNiBwLiBtLjsgMjQzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Programa para calcular promedios&#13;&#10;&#13;&#10;Elias Edgardo Segundo Antonio &#13;&#10;ICO 21 2016B "/>
+            <declare name="suma" type="Real" array="False" size="" variables="suma"/>
+            <declare name="introducidos" type="Integer" array="False" size="" variables="introducidos"/>
+            <declare name="i" type="Integer" array="False" size="" variables="i"/>
+            <declare name="calificacion" type="Real" array="False" size="" variables="calificacion"/>
+            <declare name="promedio" type="Real" array="False" size="" variables="promedio"/>
+            <assign variable="suma" expression="0"/>
+            <output expression="&quot;Introduzca el numero de calificaciones&quot;"/>
+            <input variable="introducidos"/>
+            <for variable="i" start="1" end="introducidos" direction="inc" step="1">
+                <output expression="&quot;Introduzca la calficacion numero &quot;&amp; i"/>
+                <input variable="calificacion"/>
+                <assign variable="suma" expression="suma+calificacion"/>
+            </for>
+            <assign variable="promedio" expression="suma/introducidos"/>
+            <output expression="&quot;El promedio es de &quot; &amp; promedio"/>
+        </body>
+    </function>
+</flowgorithm>
